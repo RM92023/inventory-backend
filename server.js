@@ -29,9 +29,9 @@ app.use(cors({
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 //Routes Middlewares
-app.use('api/users', userRoute);//Delete / because the links its double
-app.use('api/products', productRoute);//Delete / because the links its double
-app.use('api/contactus', contactRoute);//Delete / because the links its double
+app.use('/api/users', userRoute);
+app.use('/api/products', productRoute);
+app.use('/api/contactus', contactRoute);
 
 //Routes
 app.get('/', (req, res) => {
