@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(cors({
-    origin: [URL],//esto es para publicar y vincular backend y frontend
+    origin: [URL, 'https://inventorymaster.vercel.app'],//esto es para publicar y vincular backend y frontend
     credentials: true,
 }));
 
